@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shravani Badhe — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(160deg, #141e30, #243b55);
+      color: #e6eef8;
+      padding: 40px 20px;
+    }
+
+    .resume {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    h1.name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      margin: 0;
+    }
+
+    p.role {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.75);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .box {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: rgba(124, 92, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-weight: 500;
+      color: #bdafff;
+      word-break: break-word;
+    }
+
+    .section-title {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .skills, .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill, .language {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #e6e6ff;
+    }
+
+    .main {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .headline .title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .headline p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .section {
+      margin-top: 10px;
+    }
+
+    .entry {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .details {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      .resume {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <aside class="sidebar">
+      <h1 class="name">Shravani Badhe</h1>
+      <p class="role">2nd Year CSE Student</p>
+
+      <div class="contact">
+        <span class="box">shravani@example.com</span>
+        <span class="box">(+91) 98765 43210</span>
+        <span class="box">linkedin.com/in/shravanib</span>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="skills">
+          <div class="skill">C</div>
+          <div class="skill">Java</div>
+          <div class="skill">Python</div>
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="languages">
+          <div class="language">English</div>
+          <div class="language">Hindi</div>
+          <div class="language">Marathi</div>
+
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Interests</div>
+        <p style="margin:0;color:rgba(255,255,255,0.7);font-size:13px;">
+          Web development, Programming, Competitive coding
+        </p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="headline">
+        <div class="title">Resume</div>
+        <p>Motivated 2nd-year Computer Science Engineering student with strong problem-solving and web development skills.</p>
+      </div>
+
+      <section class="section">
+        <div class="section-title">Education</div>
+        <div class="entry">
+          <strong>B.Tech — Computer Science</strong>
+          <div class="details">SAKEC — 2024 — Present</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Projects</div>
+
+        <div class="entry">
+          <strong>Portfolio Website</strong>
+          <div class="details">HTML, CSS, JS</div>
+          <p style="margin-top:8px;color:rgba(255,255,255,0.75);line-height:1.5">
+            Created a personal portfolio to showcase my projects, achievements, and skills.
+          </p>
+        </div>
+
+        <div class="entry">
+          <strong>Library Management System</strong>
+          <div class="details">C, File Handling</div>
+          <p style="margin-top:8px;color:rgba(255,255,255,0.75);line-height:1.5">
+            Built a library book management system for issuing, returning, and searching book records.
+          </p>
+        </div>
+
+        <div class="entry">
+          <strong>Recipe Book & Meal Planner Website</strong>
+          <div class="details">HTML, CSS, JS</div>
+          <p style="margin-top:8px;color:rgba(255,255,255,0.75);line-height:1.5">
+            Developed a responsive website where users can browse, search, and save recipes, as well as plan weekly meals.
+          </p>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>
